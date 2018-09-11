@@ -5,7 +5,7 @@
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/olih/bubblegum-mutuality-reader",
+  "repository": "https://github.com/flarebyte/bubblegum-mutuality-reader",
   "license": "MIT",
   "keywords": [],
   "scripts": {
