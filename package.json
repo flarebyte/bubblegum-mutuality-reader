@@ -1,6 +1,6 @@
 {
   "name": "bubblegum-mutuality-reader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch rdf documents and dependencies based on a mutuality file",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
