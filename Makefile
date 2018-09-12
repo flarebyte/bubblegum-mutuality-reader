@@ -29,3 +29,8 @@ build: install test-ci doc
 
 publish-doc:
 	yarn run doc:publish
+
+publish:
+	yarn run version; git push --follow-tags origin master; npm publish
+
+
