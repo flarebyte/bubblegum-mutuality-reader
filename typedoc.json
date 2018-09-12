@@ -1,0 +1,3505 @@
+{
+	"id": 0,
+	"name": "bubblegum-mutuality-reader",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 6,
+			"name": "DependencyFeature",
+			"kind": 4,
+			"kindString": "Enumeration",
+			"flags": {},
+			"comment": {
+				"shortText": "https://www.w3.org/TR/void/#features"
+			},
+			"children": [
+				{
+					"id": 7,
+					"name": "N3",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 5,
+							"character": 4
+						}
+					],
+					"defaultValue": "\"http://www.w3.org/ns/formats/N3\""
+				},
+				{
+					"id": 8,
+					"name": "NTriples",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 6,
+							"character": 10
+						}
+					],
+					"defaultValue": "\"http://www.w3.org/ns/formats/N-Triples\""
+				},
+				{
+					"id": 9,
+					"name": "Turtle",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 7,
+							"character": 8
+						}
+					],
+					"defaultValue": "\"http://www.w3.org/ns/formats/Turtle\""
+				},
+				{
+					"id": 10,
+					"name": "Unknown",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 8,
+							"character": 9
+						}
+					],
+					"defaultValue": "\"\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration members",
+					"kind": 16,
+					"children": [
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.ts",
+					"line": 4,
+					"character": 22
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "AgentAccess",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 4,
+					"name": "homepage",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/agent-access.ts",
+							"line": 5,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 2,
+					"name": "identifier",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"shortText": "https://en.wikipedia.org/wiki/FOAF_(ontology)"
+					},
+					"sources": [
+						{
+							"fileName": "lib/agent-access.ts",
+							"line": 3,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 3,
+					"name": "nickname",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/agent-access.ts",
+							"line": 4,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 5,
+					"name": "writeAccess",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/agent-access.ts",
+							"line": 6,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						4,
+						2,
+						3,
+						5
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/agent-access.ts",
+					"line": 1,
+					"character": 21
+				}
+			]
+		},
+		{
+			"id": 34,
+			"name": "Mutuality",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 36,
+					"name": "attributionName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 7,
+							"character": 26
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 37,
+					"name": "attributionURL",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 8,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 42,
+					"name": "created",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 16,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 50,
+					"name": "dependencies",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 27,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "Release",
+								"id": 11
+							}
+						]
+					}
+				},
+				{
+					"id": 39,
+					"name": "description",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 13,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 44,
+					"name": "homepage",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 18,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 41,
+					"name": "languages",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 15,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 35,
+					"name": "license",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"shortText": "https://creativecommons.org/ns#License"
+					},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 6,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 48,
+					"name": "maintainers",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 25,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "AgentAccess",
+								"id": 1
+							}
+						]
+					}
+				},
+				{
+					"id": 51,
+					"name": "releases",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 28,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "Release",
+								"id": 11
+							}
+						]
+					}
+				},
+				{
+					"id": 43,
+					"name": "repositoryLocation",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 17,
+							"character": 29
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 40,
+					"name": "shortDescription",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 14,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 45,
+					"name": "subjects",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 19,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 38,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"shortText": "dublin core http://dublincore.org/documents/2012/06/14/dcmi-terms/"
+					},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 12,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 46,
+					"name": "uriSpace",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 22,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 49,
+					"name": "vocabularies",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 26,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 47,
+					"name": "writeAccess",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/mutuality.ts",
+							"line": 23,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						36,
+						37,
+						42,
+						50,
+						39,
+						44,
+						41,
+						35,
+						48,
+						51,
+						43,
+						40,
+						45,
+						38,
+						46,
+						49,
+						47
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/mutuality.ts",
+					"line": 4,
+					"character": 19
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "Release",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 20,
+					"name": "audiences",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 41,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 13,
+					"name": "created",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 32,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 17,
+					"name": "dataDump",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 36,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 14,
+					"name": "feature",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 33,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "DependencyFeature",
+						"id": 6
+					}
+				},
+				{
+					"id": 12,
+					"name": "identifier",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 31,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 15,
+					"name": "language",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 34,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 18,
+					"name": "revision",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 37,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 19,
+					"name": "subjects",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 38,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReadonlyArray",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 16,
+					"name": "uriSpace",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 35,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						20,
+						13,
+						17,
+						14,
+						12,
+						15,
+						18,
+						19,
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.ts",
+					"line": 30,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 56,
+			"name": "FileFetcher",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/fetcher.ts",
+					"line": 5,
+					"character": 16
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 57,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 58,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 59,
+									"name": "filePath",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Promise",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/fetcher.ts",
+							"line": 5,
+							"character": 18
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 52,
+			"name": "ReleaseFetcher",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/fetcher.ts",
+					"line": 4,
+					"character": 19
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 53,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 54,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 55,
+									"name": "release",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Release",
+										"id": 11
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Promise",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/fetcher.ts",
+							"line": 4,
+							"character": 21
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 24,
+			"name": "ReleaseFilter",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/release.ts",
+					"line": 46,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 25,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 26,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 27,
+									"name": "release",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Release",
+										"id": 11
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/release.ts",
+							"line": 46,
+							"character": 20
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 76,
+			"name": "ccAttributionName",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 13,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://creativecommons.org/ns#attributionName"
+			},
+			"defaultValue": "\"http://creativecommons.org/ns#attributionName\""
+		},
+		{
+			"id": 77,
+			"name": "ccAttributionURL",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 14,
+					"character": 22
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://creativecommons.org/ns#attributionURL"
+			},
+			"defaultValue": "\"http://creativecommons.org/ns#attributionURL\""
+		},
+		{
+			"id": 78,
+			"name": "dcLanguage",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 15,
+					"character": 16
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/elements/1.1/language"
+			},
+			"defaultValue": "\"http://purl.org/dc/elements/1.1/language\""
+		},
+		{
+			"id": 80,
+			"name": "dctermsAudience",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 17,
+					"character": 21
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/terms/audience"
+			},
+			"defaultValue": "\"http://purl.org/dc/terms/audience\""
+		},
+		{
+			"id": 79,
+			"name": "dctermsCreated",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 16,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/terms/created"
+			},
+			"defaultValue": "\"http://purl.org/dc/terms/created\""
+		},
+		{
+			"id": 81,
+			"name": "dctermsDescription",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 18,
+					"character": 24
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://dublincore.org/documents/2012/06/14/dcmi-terms/description"
+			},
+			"defaultValue": "\"http://dublincore.org/documents/2012/06/14/dcmi-terms/description\""
+		},
+		{
+			"id": 82,
+			"name": "dctermsLicense",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 20,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/terms/license"
+			},
+			"defaultValue": "\"http://purl.org/dc/terms/license\""
+		},
+		{
+			"id": 83,
+			"name": "dctermsRequires",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 21,
+					"character": 21
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/terms/requires"
+			},
+			"defaultValue": "\"http://purl.org/dc/terms/requires\""
+		},
+		{
+			"id": 84,
+			"name": "dctermsSubject",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 22,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/terms/subject"
+			},
+			"defaultValue": "\"http://purl.org/dc/terms/subject\""
+		},
+		{
+			"id": 85,
+			"name": "dctermsTitle",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 23,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://purl.org/dc/terms/title"
+			},
+			"defaultValue": "\"http://purl.org/dc/terms/title\""
+		},
+		{
+			"id": 86,
+			"name": "doapHomepage",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 24,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://usefulinc.com/ns/doap#homepage"
+			},
+			"defaultValue": "\"http://usefulinc.com/ns/doap#homepage\""
+		},
+		{
+			"id": 87,
+			"name": "doapMaintainer",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 25,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://usefulinc.com/ns/doap#maintainer"
+			},
+			"defaultValue": "\"http://usefulinc.com/ns/doap#maintainer\""
+		},
+		{
+			"id": 88,
+			"name": "doapRelease",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 26,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://usefulinc.com/ns/doap#release"
+			},
+			"defaultValue": "\"http://usefulinc.com/ns/doap#release\""
+		},
+		{
+			"id": 89,
+			"name": "doapRepoLocation",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 27,
+					"character": 22
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://usefulinc.com/ns/doap#location"
+			},
+			"defaultValue": "\"http://usefulinc.com/ns/doap#location\""
+		},
+		{
+			"id": 90,
+			"name": "doapRevision",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 28,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://usefulinc.com/ns/doap#revision"
+			},
+			"defaultValue": "\"http://usefulinc.com/ns/doap#revision\""
+		},
+		{
+			"id": 91,
+			"name": "doapShortDesc",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 29,
+					"character": 19
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://usefulinc.com/ns/doap#shortdesc"
+			},
+			"defaultValue": "\"http://usefulinc.com/ns/doap#shortdesc\""
+		},
+		{
+			"id": 115,
+			"name": "dump1",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 11,
+					"character": 11
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "<http://a.com/a> <http://purl.org/dc/terms/title> \"dump1\" ."
+			},
+			"defaultValue": "\"<http://a.com/a> <http://purl.org/dc/terms/title> \"dump1\" .\""
+		},
+		{
+			"id": 116,
+			"name": "dump2",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 12,
+					"character": 11
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "<http://a.com/a> <http://purl.org/dc/terms/title> \"dump2\" ."
+			},
+			"defaultValue": "\"<http://a.com/a> <http://purl.org/dc/terms/title> \"dump2\" .\""
+		},
+		{
+			"id": 92,
+			"name": "foafCurrentProject",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 30,
+					"character": 24
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://xmlns.com/foaf/0.1/currentProject"
+			},
+			"defaultValue": "\"http://xmlns.com/foaf/0.1/currentProject\""
+		},
+		{
+			"id": 93,
+			"name": "foafHomepage",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 31,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://xmlns.com/foaf/0.1/homepage"
+			},
+			"defaultValue": "\"http://xmlns.com/foaf/0.1/homepage\""
+		},
+		{
+			"id": 94,
+			"name": "foafNickname",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 32,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://xmlns.com/foaf/0.1/nick"
+			},
+			"defaultValue": "\"http://xmlns.com/foaf/0.1/nick\""
+		},
+		{
+			"id": 151,
+			"name": "mutualityContent",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.spec.ts",
+					"line": 8,
+					"character": 22
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			},
+			"defaultValue": " [\n  '<http://one.example/subject1> <http://dublincore.org/documents/2012/06/14/dcmi-terms/description> \"some desc\"@en .',\n  '<http://one.example/subject1> <http://purl.org/dc/terms/title> \"some title\"@en .',\n  '<http://one.example/subject1> <http://usefulinc.com/ns/doap#shortdesc> \"short desc\"@en .',\n  '<http://one.example/subject1> <http://purl.org/dc/elements/1.1/language> \"en-GB\" .',\n  '<http://one.example/subject1> <http://usefulinc.com/ns/doap#homepage> \"http://site.com\" .',\n  '<http://one.example/subject1> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-nc/3.0/> .',\n  '<http://one.example/subject1> <http://creativecommons.org/ns#attributionName> \"attr name\"@en .',\n  '<http://one.example/subject1> <http://creativecommons.org/ns#attributionURL> \"http://site.com/attribution\" .',\n  '<http://one.example/subject1> <http://usefulinc.com/ns/doap#location> \"https://github.com/ewilderj/doap.git\" .',\n  '<http://one.example/subject1> <http://purl.org/dc/terms/created> \"2008-09-15T15:53:00+05:00\" .',\n  '<http://one.example/subject1> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Computer_science> .',\n  '<http://one.example/subject1> <http://usefulinc.com/ns/doap#release> <http://one.example/release1> .',\n  '<http://one.example/subject1> <http://usefulinc.com/ns/doap#release> <http://one.example/release2> .',\n  '<http://one.example/subject1> <http://rdfs.org/ns/void#vocabulary> \"http://purl.org/dc/terms/\" .',\n  '<http://one.example/subject1> <http://rdfs.org/ns/void#vocabulary> \"http://rdfs.org/sioc/ns\" .',\n  '<http://one.example/subject1> <http://rdfs.org/ns/void#uriSpace> \"http://one.example/\" .',\n  '<http://one.example/subject1> <http://purl.org/dc/terms/requires> <http://one.example/dep1> .',\n  '<http://one.example/subject1> <http://usefulinc.com/ns/doap#maintainer> <http://one.example/maintainer1> .',\n  '<http://one.example/subject1> <http://xmlns.com/foaf/0.1/currentProject> \"http://one.example/monsters\" .',\n  '<http://one.example/subject1> <http://xmlns.com/foaf/0.1/currentProject> \"http://one.example/heros\" .',\n  '<http://one.example/release1> <http://purl.org/dc/terms/created> \"2008-09-15T15:53:00+05:00\" .',\n  '<http://one.example/release1> <http://rdfs.org/ns/void#dataDump> \"http://site.com/dump.n3.gz\" .',\n  '<http://one.example/release1> <http://purl.org/dc/elements/1.1/language> \"en-GB\" .',\n  '<http://one.example/release1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .',\n  '<http://one.example/release1> <http://usefulinc.com/ns/doap#revision> \"1.0\".',\n  '<http://one.example/release1> <http://rdfs.org/ns/void#uriSpace> \"http://site.com/release1/en\" .',\n  '<http://one.example/release1> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Computer_science> .',\n  '<http://one.example/release2> <http://purl.org/dc/terms/created> \"2008-09-15T15:53:00+05:00\" .',\n  '<http://one.example/release2> <http://rdfs.org/ns/void#dataDump> \"http://site.com/dump2.n3.gz\" .',\n  '<http://one.example/release2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N3> .',\n  '<http://one.example/release2> <http://usefulinc.com/ns/doap#revision> \"2.0\".',\n  '<http://one.example/release2> <http://purl.org/dc/elements/1.1/language> \"en-GB\".',\n  '<http://one.example/release2> <http://rdfs.org/ns/void#uriSpace> <http://site.com/release2/en> .',\n  '<http://one.example/release2> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Computer_science> .',\n  '<http://one.example/release2> <http://purl.org/dc/terms/audience> <http://site.com/all-ages-uk> .',\n  '<http://one.example/dep1> <http://purl.org/dc/terms/created> \"2008-09-15T15:53:00+05:00\".',\n  '<http://one.example/dep1> <http://rdfs.org/ns/void#dataDump> \"http://site.com/dump.n3.gz\".',\n  '<http://one.example/dep1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .',\n  '<http://one.example/dep1> <http://usefulinc.com/ns/doap#revision> \"1.0\".',\n  '<http://one.example/dep1> <http://purl.org/dc/elements/1.1/language> \"en-GB\".',\n  '<http://one.example/dep1> <http://rdfs.org/ns/void#uriSpace> <http://site.com/space1> .',\n  '<http://one.example/dep1> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Computer_science> .',\n  '<http://one.example/dep1> <http://purl.org/dc/terms/audience> <http://site.com/all-ages-uk> .',\n  '<http://one.example/dep1> <http://purl.org/dc/terms/audience> <http://site.com/all-ages-us> .',\n  '<http://one.example/maintainer1> <http://xmlns.com/foaf/0.1/homepage> <http://one.example/oli/profile> .',\n  '<http://one.example/maintainer1> <http://xmlns.com/foaf/0.1/nick> \"Oli\" .',\n  '<http://one.example/maintainer1> <http://xmlns.com/foaf/0.1/currentProject> \"http://one.example/monsters\" .'\n].join('\\n')"
+		},
+		{
+			"id": 95,
+			"name": "voidDataDump",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 33,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://rdfs.org/ns/void#dataDump"
+			},
+			"defaultValue": "\"http://rdfs.org/ns/void#dataDump\""
+		},
+		{
+			"id": 96,
+			"name": "voidFeature",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 34,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://rdfs.org/ns/void#feature"
+			},
+			"defaultValue": "\"http://rdfs.org/ns/void#feature\""
+		},
+		{
+			"id": 97,
+			"name": "voidUriSpace",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 35,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://rdfs.org/ns/void#uriSpace"
+			},
+			"defaultValue": "\"http://rdfs.org/ns/void#uriSpace\""
+		},
+		{
+			"id": 98,
+			"name": "voidVocabulary",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 36,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "stringLiteral",
+				"value": "http://rdfs.org/ns/void#vocabulary"
+			},
+			"defaultValue": "\"http://rdfs.org/ns/void#vocabulary\""
+		},
+		{
+			"id": 21,
+			"name": "asFeature",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Convert a uri to a DependencyFeature object",
+				"returns": "a DependencyFeature\n"
+			},
+			"signatures": [
+				{
+					"id": 22,
+					"name": "asFeature",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Convert a uri to a DependencyFeature object",
+						"returns": "a DependencyFeature\n"
+					},
+					"parameters": [
+						{
+							"id": 23,
+							"name": "value",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "a url"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "DependencyFeature",
+						"id": 6
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.ts",
+					"line": 17,
+					"character": 15
+				}
+			]
+		},
+		{
+			"id": 28,
+			"name": "byAudience",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"signatures": [
+				{
+					"id": 29,
+					"name": "byAudience",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Filter a list of releases or dependencies by audience",
+						"text": "### Example\n```js\ndependencies.filter(byAudience('http://dbpedia.org/resource/Adults'))\n// => dependencies\n```\n",
+						"returns": "releases\n"
+					},
+					"parameters": [
+						{
+							"id": 30,
+							"name": "audience",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "a specific audience"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReleaseFilter",
+						"id": 24
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.ts",
+					"line": 60,
+					"character": 19
+				}
+			]
+		},
+		{
+			"id": 31,
+			"name": "bySubjects",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"signatures": [
+				{
+					"id": 32,
+					"name": "bySubjects",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Filter a list of releases or dependencies by subjects",
+						"text": "### Example\n```js\ndependencies.filter(bySubjects(['http://dbpedia.org/resource/Paris']))\n// => dependencies\n```\n",
+						"returns": "releases\n"
+					},
+					"parameters": [
+						{
+							"id": 33,
+							"name": "subjects",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "a list of subjects"
+							},
+							"type": {
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ReleaseFilter",
+						"id": 24
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.ts",
+					"line": 76,
+					"character": 19
+				}
+			]
+		},
+		{
+			"id": 64,
+			"name": "fetchDependencies",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 65,
+					"name": "fetchDependencies",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Fetch a list of dependencies",
+						"returns": "a list of triples\n"
+					},
+					"parameters": [
+						{
+							"id": 66,
+							"name": "releaseFetcher",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "a downloader for the content"
+							},
+							"type": {
+								"type": "reference",
+								"name": "ReleaseFetcher",
+								"id": 52
+							}
+						},
+						{
+							"id": 67,
+							"name": "dependencies",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "the list of releases to download"
+							},
+							"type": {
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Release",
+										"id": 11
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Promise",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Triple"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.ts",
+					"line": 29,
+					"character": 39
+				}
+			]
+		},
+		{
+			"id": 60,
+			"name": "fetchDependency",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 61,
+					"name": "fetchDependency",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Fetch a dependency",
+						"returns": "a list of triples\n"
+					},
+					"parameters": [
+						{
+							"id": 62,
+							"name": "releaseFetcher",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "a downloader for the content"
+							},
+							"type": {
+								"type": "reference",
+								"name": "ReleaseFetcher",
+								"id": 52
+							}
+						},
+						{
+							"id": 63,
+							"name": "dependency",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "the release to download"
+							},
+							"type": {
+								"type": "reference",
+								"name": "Release",
+								"id": 11
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Promise",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Triple"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.ts",
+					"line": 14,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 68,
+			"name": "fetchTriplesByPath",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 69,
+					"name": "fetchTriplesByPath",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Fetch triples by a path or uri",
+						"returns": "a list of triples\n"
+					},
+					"parameters": [
+						{
+							"id": 70,
+							"name": "fileFetcher",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "a downloader for the file"
+							},
+							"type": {
+								"type": "reference",
+								"name": "FileFetcher",
+								"id": 56
+							}
+						},
+						{
+							"id": 71,
+							"name": "path",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "the file path or uri for the file"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Promise",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Triple"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.ts",
+					"line": 47,
+					"character": 40
+				}
+			]
+		},
+		{
+			"id": 72,
+			"name": "fetchTriplesByPaths",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 73,
+					"name": "fetchTriplesByPaths",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Fetch triples by a list of paths or uris",
+						"returns": "a list of triples\n"
+					},
+					"parameters": [
+						{
+							"id": 74,
+							"name": "fileFetcher",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "a downloader for the file"
+							},
+							"type": {
+								"type": "reference",
+								"name": "FileFetcher",
+								"id": 56
+							}
+						},
+						{
+							"id": 75,
+							"name": "paths",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "the list of paths"
+							},
+							"type": {
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Promise",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Triple"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.ts",
+					"line": 62,
+					"character": 41
+				}
+			]
+		},
+		{
+			"id": 128,
+			"name": "mockFileFetcher",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"signatures": [
+				{
+					"id": 129,
+					"name": "mockFileFetcher",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 130,
+							"name": "path",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Promise",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 35,
+					"character": 21
+				}
+			]
+		},
+		{
+			"id": 125,
+			"name": "mockReleaseFetcher",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"signatures": [
+				{
+					"id": 126,
+					"name": "mockReleaseFetcher",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 127,
+							"name": "release",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Release",
+								"id": 11
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Promise",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 24,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 99,
+			"name": "nullToEmpty",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"signatures": [
+				{
+					"id": 100,
+					"name": "nullToEmpty",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 101,
+							"name": "value",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "null"
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 38,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 106,
+			"name": "parseMaintainer",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"signatures": [
+				{
+					"id": 107,
+					"name": "parseMaintainer",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 108,
+							"name": "triples",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Triple"
+									}
+								]
+							}
+						},
+						{
+							"id": 109,
+							"name": "identifier",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 110,
+							"name": "access",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "AgentAccess",
+						"id": 1
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 75,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 111,
+			"name": "parseMutuality",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 112,
+					"name": "parseMutuality",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Parses a mutuality content provided as n-triples",
+						"text": "### Example\n```js\nparseMutuality('en', ntripleStringContent)\n// => Mutuality object\n```\n",
+						"returns": "a Mutuality object\n"
+					},
+					"parameters": [
+						{
+							"id": 113,
+							"name": "language",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "the language for all the descriptions"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 114,
+							"name": "content",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "the content in the n-triples format"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Mutuality",
+						"id": 34
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 107,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 102,
+			"name": "parseRelease",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"signatures": [
+				{
+					"id": 103,
+					"name": "parseRelease",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 104,
+							"name": "triples",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ReadonlyArray",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Triple"
+									}
+								]
+							}
+						},
+						{
+							"id": 105,
+							"name": "identifier",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Release",
+						"id": 11
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/mutuality-parser.ts",
+					"line": 42,
+					"character": 21
+				}
+			]
+		},
+		{
+			"id": 131,
+			"name": "dependency1",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 132,
+					"name": "audiences",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 47,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://site.com/all-ages-uk', 'http://site.com/all-ages-us']"
+				},
+				{
+					"id": 133,
+					"name": "created",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 48,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"2008-09-15T15:53:00+05:00\""
+				},
+				{
+					"id": 134,
+					"name": "dataDump",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 49,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/dump1.nt\""
+				},
+				{
+					"id": 135,
+					"name": "feature",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 50,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "NTriples",
+						"id": 8
+					},
+					"defaultValue": " DependencyFeature.NTriples"
+				},
+				{
+					"id": 136,
+					"name": "identifier",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 51,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://one.example/dep1\""
+				},
+				{
+					"id": 137,
+					"name": "language",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 52,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"en-GB\""
+				},
+				{
+					"id": 138,
+					"name": "revision",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 53,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"1.0\""
+				},
+				{
+					"id": 139,
+					"name": "subjects",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 54,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://dbpedia.org/resource/Computer_science']"
+				},
+				{
+					"id": 140,
+					"name": "uriSpace",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 55,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/space1\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						132,
+						133,
+						134,
+						135,
+						136,
+						137,
+						138,
+						139,
+						140
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 46,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 141,
+			"name": "dependency2",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 142,
+					"name": "audiences",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 59,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://site.com/all-ages-uk']"
+				},
+				{
+					"id": 143,
+					"name": "created",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 60,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"2008-09-15T15:53:00+05:00\""
+				},
+				{
+					"id": 144,
+					"name": "dataDump",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 61,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/dump2.nt\""
+				},
+				{
+					"id": 145,
+					"name": "feature",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 62,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "NTriples",
+						"id": 8
+					},
+					"defaultValue": " DependencyFeature.NTriples"
+				},
+				{
+					"id": 146,
+					"name": "identifier",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 63,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://one.example/dep2\""
+				},
+				{
+					"id": 147,
+					"name": "language",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 64,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"en-GB\""
+				},
+				{
+					"id": 148,
+					"name": "revision",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 65,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"1.0\""
+				},
+				{
+					"id": 149,
+					"name": "subjects",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 66,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://dbpedia.org/resource/Computer_science']"
+				},
+				{
+					"id": 150,
+					"name": "uriSpace",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 67,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/space1\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						142,
+						143,
+						144,
+						145,
+						146,
+						147,
+						148,
+						149,
+						150
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 58,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 152,
+			"name": "release1",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 153,
+					"name": "audiences",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 12,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://site.com/all-ages-uk', 'http://site.com/all-ages-us']"
+				},
+				{
+					"id": 154,
+					"name": "created",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 13,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"2008-09-15T15:53:00+05:00\""
+				},
+				{
+					"id": 155,
+					"name": "dataDump",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 14,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/dump.n3.gz\""
+				},
+				{
+					"id": 156,
+					"name": "feature",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 15,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "NTriples",
+						"id": 8
+					},
+					"defaultValue": " DependencyFeature.NTriples"
+				},
+				{
+					"id": 157,
+					"name": "identifier",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 16,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://one.example/release\""
+				},
+				{
+					"id": 158,
+					"name": "language",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 17,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"en-GB\""
+				},
+				{
+					"id": 159,
+					"name": "revision",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 18,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"1.0\""
+				},
+				{
+					"id": 160,
+					"name": "subjects",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 19,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " [\n    'http://dbpedia.org/resource/Computer_science',\n    'http://dbpedia.org/resource/Technology'\n  ]"
+				},
+				{
+					"id": 161,
+					"name": "uriSpace",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 23,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/release1/en\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						153,
+						154,
+						155,
+						156,
+						157,
+						158,
+						159,
+						160,
+						161
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.spec.ts",
+					"line": 11,
+					"character": 14
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 162,
+			"name": "release2",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 163,
+					"name": "audiences",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 27,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://site.com/all-ages-us']"
+				},
+				{
+					"id": 164,
+					"name": "created",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 28,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"2008-09-15T15:53:00+05:00\""
+				},
+				{
+					"id": 165,
+					"name": "dataDump",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 29,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/dump2.n3.gz\""
+				},
+				{
+					"id": 166,
+					"name": "feature",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 30,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "NTriples",
+						"id": 8
+					},
+					"defaultValue": " DependencyFeature.NTriples"
+				},
+				{
+					"id": 167,
+					"name": "identifier",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 31,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://one.example/release2\""
+				},
+				{
+					"id": 168,
+					"name": "language",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 32,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"en-GB\""
+				},
+				{
+					"id": 169,
+					"name": "revision",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 33,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"1.0\""
+				},
+				{
+					"id": 170,
+					"name": "subjects",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 34,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['http://dbpedia.org/resource/Black_magic']"
+				},
+				{
+					"id": 171,
+					"name": "uriSpace",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/release.spec.ts",
+							"line": 35,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://site.com/release2/en\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						163,
+						164,
+						165,
+						166,
+						167,
+						168,
+						169,
+						170,
+						171
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/release.spec.ts",
+					"line": 26,
+					"character": 14
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 117,
+			"name": "tripleDump1",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 118,
+					"name": "object",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 14,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\"dump1\"\""
+				},
+				{
+					"id": 119,
+					"name": "predicate",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 15,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://purl.org/dc/terms/title\""
+				},
+				{
+					"id": 120,
+					"name": "subject",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 16,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://a.com/a\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						118,
+						119,
+						120
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 13,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 121,
+			"name": "tripleDump2",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 122,
+					"name": "object",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 19,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\"dump2\"\""
+				},
+				{
+					"id": 123,
+					"name": "predicate",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 20,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://purl.org/dc/terms/title\""
+				},
+				{
+					"id": 124,
+					"name": "subject",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/fetcher.spec.ts",
+							"line": 21,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"http://a.com/a\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						122,
+						123,
+						124
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/fetcher.spec.ts",
+					"line": 18,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Enumerations",
+			"kind": 4,
+			"children": [
+				6
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				1,
+				34,
+				11
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				56,
+				52,
+				24
+			]
+		},
+		{
+			"title": "Variables",
+			"kind": 32,
+			"children": [
+				76,
+				77,
+				78,
+				80,
+				79,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				115,
+				116,
+				92,
+				93,
+				94,
+				151,
+				95,
+				96,
+				97,
+				98
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				21,
+				28,
+				31,
+				64,
+				60,
+				68,
+				72,
+				128,
+				125,
+				99,
+				106,
+				111,
+				102
+			]
+		},
+		{
+			"title": "Object literals",
+			"kind": 2097152,
+			"children": [
+				131,
+				141,
+				152,
+				162,
+				117,
+				121
+			]
+		}
+	]
+}
