@@ -26,3 +26,6 @@ doc:
 	rm -rf build/docs; yarn run doc:html; yarn run doc:json;
 
 build: install test-ci doc
+
+publish-doc:
+	yarn run doc:publish
