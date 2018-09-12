@@ -16,24 +16,31 @@ enum DependencyFeature {
  */
 const asFeature = (value: string) => {
   switch (value) {
-    case DependencyFeature.NTriples: return DependencyFeature.NTriples
-    case DependencyFeature.N3: return DependencyFeature.N3
-    case DependencyFeature.Turtle: return DependencyFeature.Turtle
-    default: return DependencyFeature.Unknown
+    case DependencyFeature.NTriples:
+      return DependencyFeature.NTriples;
+    case DependencyFeature.N3:
+      return DependencyFeature.N3;
+    case DependencyFeature.Turtle:
+      return DependencyFeature.Turtle;
+    default:
+      return DependencyFeature.Unknown;
   }
-}
+};
 
 interface Release {
   readonly identifier: string;
   readonly created: string;
   readonly feature: DependencyFeature;
-  readonly language: string; 
-  readonly uriSpace: string; /** void:uriSpace */
-  readonly dataDump: string; /** void:dataDump */
+  readonly language: string;
+  readonly uriSpace: string /** void:uriSpace */;
+  readonly dataDump: string /** void:dataDump */;
   readonly revision: string;
-  readonly subjects: ReadonlyArray<string>; /** dcterms:subject such as http://dbpedia.org/resource/Computer_science */
-  readonly audiences: ReadonlyArray<string>; /** dcterms:audience such as http://site.com/all-ages-uk */
-
+  readonly subjects: ReadonlyArray<
+    string
+  > /** dcterms:subject such as http://dbpedia.org/resource/Computer_science */;
+  readonly audiences: ReadonlyArray<
+    string
+  > /** dcterms:audience such as http://site.com/all-ages-uk */;
 }
 
 type ReleaseFilter = (release: Release) => boolean;
@@ -70,5 +77,4 @@ function bySubjects(subjects: ReadonlyArray<string>): ReleaseFilter {
   return r => intersection(r.subjects, subjects).length > 0;
 }
 
-export { asFeature, Release, DependencyFeature, byAudience, bySubjects }
-
+export { asFeature, Release, DependencyFeature, byAudience, bySubjects };

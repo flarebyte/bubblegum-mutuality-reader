@@ -1,6 +1,12 @@
 // tslint:disable:no-expression-statement
 import { test } from 'ava';
-import { asFeature, byAudience, bySubjects, DependencyFeature, Release } from './release'
+import {
+  asFeature,
+  byAudience,
+  bySubjects,
+  DependencyFeature,
+  Release
+} from './release';
 
 const release1: Release = {
   audiences: ['http://site.com/all-ages-uk', 'http://site.com/all-ages-us'],
@@ -10,9 +16,12 @@ const release1: Release = {
   identifier: 'http://one.example/release',
   language: 'en-GB',
   revision: '1.0',
-  subjects: ['http://dbpedia.org/resource/Computer_science', 'http://dbpedia.org/resource/Technology'],
-  uriSpace: 'http://site.com/release1/en',
-}
+  subjects: [
+    'http://dbpedia.org/resource/Computer_science',
+    'http://dbpedia.org/resource/Technology'
+  ],
+  uriSpace: 'http://site.com/release1/en'
+};
 
 const release2: Release = {
   audiences: ['http://site.com/all-ages-us'],
@@ -23,22 +32,28 @@ const release2: Release = {
   language: 'en-GB',
   revision: '1.0',
   subjects: ['http://dbpedia.org/resource/Black_magic'],
-  uriSpace: 'http://site.com/release2/en',
-}
-
+  uriSpace: 'http://site.com/release2/en'
+};
 
 test('bySubjects should filter by subject', t => {
-  const actual = [release1, release2].filter(bySubjects(['http://dbpedia.org/resource/Computer_science']));
+  const actual = [release1, release2].filter(
+    bySubjects(['http://dbpedia.org/resource/Computer_science'])
+  );
   t.deepEqual(actual, [release1]);
 });
 
 test('byAudience should filter by audience', t => {
-  const actual = [release1, release2].filter(byAudience('http://dbpedia.org/resource/Computer_science'));
+  const actual = [release1, release2].filter(
+    byAudience('http://dbpedia.org/resource/Computer_science')
+  );
   t.deepEqual(actual, [release1]);
 });
 
 test('asFeature should support N3', t => {
-  t.deepEqual(asFeature('http://www.w3.org/ns/formats/N3'), DependencyFeature.N3);
+  t.deepEqual(
+    asFeature('http://www.w3.org/ns/formats/N3'),
+    DependencyFeature.N3
+  );
 });
 
 test('asFeature should support default', t => {

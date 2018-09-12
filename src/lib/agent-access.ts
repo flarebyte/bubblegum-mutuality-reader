@@ -5,5 +5,4 @@ interface AgentAccess {
   readonly homepage: string;
   readonly writeAccess: ReadonlyArray<string>;
 }
-export { AgentAccess }
-
+export { AgentAccess };
